@@ -43,8 +43,6 @@ The website features a main gallery section where paintings are displayed in a g
 **Development Tools:** Visual Studio Code, GitHub Pages
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
 [![Website](https://img.shields.io/website?label=Live%20Site&url=https%3A%2F%2Foffline20.github.io%2FArt-gallery%2F)](https://offline20.github.io/Art-gallery/)
 [![HTML](https://img.shields.io/badge/HTML5-5a5a5a.svg?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS3-264de4.svg?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
