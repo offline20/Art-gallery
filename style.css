@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-image: url('artistic-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* White opaque background */
+    color: black;
+    padding: 2em;
+    text-align: center;
+    font-family: 'Lato', sans-serif; /* Lato font for the header */
+    font-size: 1.5em; /* Adjusted font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em; /* Font size for the header */
+    text-align: center;
+    color: black; /* Black color for the header text */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3em;
+}
+
+.painting {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    margin: 1.5em;
+    width: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    padding-bottom: 1.5em;
+}
+
+.painting img {
+    width: 100%;
+    height: auto;
+}
+
+.painting .info {
+    padding: 1.5em;
+    text-align: left;
+    color: #000;
+    font-family: 'Open Sans', sans-serif; /* Open Sans font for painting info */
+}
+
+.painting .info h2 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font for painting names */
+    font-size: 2em; /* Increased font size for painting names */
+    color: #000;
+    text-decoration: underline; /* Underline painting names */
+}
+
+.painting .info p {
+    margin: 0.8em 0;
+    font-size: 1.2em;
+    color: #000;
+}
+
+.highlight {
+    font-family: 'Great Vibes', cursive;
+    color: #d9534f;
+}
+
+.underline {
+    text-decoration: underline;
+    color: #0275d8;
+}
+
+.painting:hover {
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

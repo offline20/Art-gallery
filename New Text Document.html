@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-image: url('artistic-background.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* White opaque background */
+            color: black;
+            padding: 2em;
+            text-align: center;
+            font-family: 'Lato', sans-serif; /* Lato font for the header */
+            font-size: 1.5em; /* Adjusted font size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-size: 2.5em; /* Font size for the title */
+            text-align: center;
+            color: black; /* Black color for the header text */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 3em;
+        }
+
+        .painting {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ddd;
+            margin: 1.5em;
+            width: 350px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+            padding-bottom: 1.5em;
+        }
+
+        .painting img {
+            width: 100%;
+            height: auto;
+        }
+
+        .painting .info {
+            padding: 1.5em;
+            text-align: left;
+            color: #000;
+            font-family: 'Open Sans', sans-serif; /* Open Sans font for painting info */
+        }
+
+        .painting .info h2 {
+            margin-top: 0;
+            font-family: 'Poppins', sans-serif; /* Poppins font for painting names */
+            font-size: 1.6em; /* Reduced font size for painting names */
+            color: #d9534f; /* Red color for painting names */
+            text-decoration: underline; /* Underline painting names */
+            font-weight: normal; /* Remove bold */
+        }
+
+        .painting .info p {
+            margin: 0.8em 0;
+            font-size: 1.2em;
+            color: #000;
+        }
+
+        .highlight {
+            font-family: 'Poppins', sans-serif; /* Poppins font for highlights */
+            color: #d9534f; /* Red color for highlights */
+        }
+
+        .underline {
+            text-decoration: underline;
+            color: #0275d8; /* Blue color for underlined text */
+        }
+
+        .painting:hover {
+            transform: scale(1.08);
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery</h1>
+    </header>
+
+    <main class="gallery">
+        <div class="painting">
+            <img src="painting1.jpg" alt="Starry Night">
+            <div class="info">
+                <h2><span class="highlight">Starry Night</span></h2>
+                <p><span class="underline">Artist:</span> Vincent van Gogh</p>
+                <p><span class="underline">Year:</span> 1889</p>
+                <p><span class="underline">Medium:</span> Oil on canvas</p>
+                <p><span class="underline">Location:</span> Museum of Modern Art, New York</p>
+                <p>Description: A mesmerizing depiction of a swirling night sky over a small, quiet town, capturing van Gogh's emotional intensity.</p>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="painting2.jpg" alt="The Persistence of Memory">
+            <div class="info">
+                <h2><span class="highlight">The Persistence of Memory</span></h2>
+                <p><span class="underline">Artist:</span> Salvador Dalí</p>
+                <p><span class="underline">Year:</span> 1931</p>
+                <p><span class="underline">Medium:</span> Oil on canvas</p>
+                <p><span class="underline">Location:</span> Museum of Modern Art, New York</p>
+                <p>Description: A surreal landscape featuring melting clocks, representing the fluidity of time and the dream-like quality of memory.</p>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="painting3.jpg" alt="Mona Lisa">
+            <div class="info">
+                <h2><span class="highlight">Mona Lisa</span></h2>
+                <p><span class="underline">Artist:</span> Leonardo da Vinci</p>
+                <p><span class="underline">Year:</span> c. 1503-1506</p>
+                <p><span class="underline">Medium:</span> Oil on poplar panel</p>
+                <p><span class="underline">Location:</span> Louvre Museum, Paris</p>
+                <p>Description: Perhaps the most famous portrait in the world, the Mona Lisa is renowned for her enigmatic smile and detailed background.</p>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="painting4.jpg" alt="The Scream">
+            <div class="info">
+                <h2><span class="highlight">The Scream</span></h2>
+                <p><span class="underline">Artist:</span> Edvard Munch</p>
+                <p><span class="underline">Year:</span> 1893</p>
+                <p><span class="underline">Medium:</span> Oil, tempera, and pastel on cardboard</p>
+                <p><span class="underline">Location:</span> National Gallery, Oslo</p>
+                <p>Description: An iconic image symbolizing existential angst, with a figure expressing intense emotion against a turbulent sky.</p>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="painting5.jpg" alt="Girl with a Pearl Earring">
+            <div class="info">
+                <h2><span class="highlight">Girl with a Pearl Earring</span></h2>
+                <p><span class="underline">Artist:</span> Johannes Vermeer</p>
+                <p><span class="underline">Year:</span> c. 1665</p>
+                <p><span class="underline">Medium:</span> Oil on canvas</p>
+                <p><span class="underline">Location:</span> Mauritshuis, The Hague</p>
+                <p>Description: A captivating portrait often referred to as the "Mona Lisa of the North," showcasing Vermeer's masterful use of light.</p>
+            </div>
+        </div>
+
+        <div class="painting">
+            <img src="painting6.jpg" alt="The Birth of Venus">
+            <div class="info">
+                <h2><span class="highlight">The Birth of Venus</span></h2>
+                <p><span class="underline">Artist:</span> Sandro Botticelli</p>
+                <p><span class="underline">Year:</span> c. 1484-1486</p>
+                <p><span class="underline">Medium:</span> Tempera on canvas</p>
+                <p><span class="underline">Location:</span> Uffizi Gallery, Florence</p>
+                <p>Description: A stunning depiction of the goddess Venus emerging from the sea, symbolizing beauty, love, and the rebirth of classical antiquity.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
