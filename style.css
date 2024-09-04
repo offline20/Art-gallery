@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap');
 
 body {
     font-family: 'Playfair Display', serif;
@@ -9,6 +9,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    font-size: 100%;
 }
 
 header {
@@ -23,7 +24,7 @@ header {
 
 h1 {
     font-family: 'Lato', sans-serif;
-    font-size: 2.5em; /* Font size for the header */
+    font-size: 2.5rem; /* Font size for the title */
     text-align: center;
     color: black; /* Black color for the header text */
     margin: 0;
@@ -41,7 +42,8 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #ddd;
     margin: 1.5em;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s;
     padding-bottom: 1.5em;
@@ -61,35 +63,62 @@ h1 {
 
 .painting .info h2 {
     margin-top: 0;
-    font-family: 'Montserrat', sans-serif; /* Montserrat font for painting names */
-    font-size: 2em; /* Increased font size for painting names */
-    color: #000;
+    font-family: 'Poppins', sans-serif; /* Poppins font for painting names */
+    font-size: 1.6rem; /* Reduced font size for painting names */
+    color: #d9534f; /* Red color for painting names */
     text-decoration: underline; /* Underline painting names */
+    font-weight: normal; /* Remove bold */
 }
 
 .painting .info p {
     margin: 0.8em 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: #000;
 }
 
 .highlight {
-    font-family: 'Great Vibes', cursive;
-    color: #d9534f;
+    font-family: 'Poppins', sans-serif; /* Poppins font for highlights */
+    color: #d9534f; /* Red color for highlights */
 }
 
 .underline {
     text-decoration: underline;
-    color: #0275d8;
+    color: #0275d8; /* Blue color for underlined text */
 }
 
 .painting:hover {
     transform: scale(1.08);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .gallery {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 992px) {
     .gallery {
         flex-direction: column;
         align-items: center;
+    }
+
+    .painting {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .painting .info h2 {
+        font-size: 1.4rem;
     }
 }
